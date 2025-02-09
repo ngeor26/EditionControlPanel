@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Edition App Control Panel</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            background-color: #282828;
+            color: white
+        }
+
+        input,
+        button {
+            margin: 10px;
+            padding: 8px;
+        }
+
+        #controlPanel {
+            display: none;
+        }
+
+        #login {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://theeditionga.com/wp-content/uploads/images/EditionHeader-1.png">
+    <div id="login">
+        <h2>Login to Control Panel</h2>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="loginBtn">Login</button>
+    </div>
+    <div id="controlPanel">
+        <h2>Control Forms</h2>
+        <h3>Current Form Value: </h3>
+        <h3 id="formValue"></h3>
+        <input type="text" id="formUrl" placeholder="Enter form URL">
+        <button id="formAdd">Add Form</button>
+        <br>
+        <button id="formRemove">Remove Current Form</button>
+        <h2>Send Notifications</h2>
+        <input type="text" id="notification" placeholder="Enter notification message">
+        <button id="send">Send Notification</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
